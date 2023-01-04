@@ -1,0 +1,286 @@
+:root {
+  --color1: #ffc453;
+  --color2: #0a09c1;
+  --color3: #31316e;
+  --color4: #2b2b2d;
+  --color5: #999999;
+  --color6: rgb(27, 26, 26);
+  --color7: rgb(236, 236, 228);
+}
+/*Шапка сайта начало*/
+header,
+footer,
+section {
+  padding: 100px 0;
+}
+header {
+  padding: 200px 0;
+}
+header,
+footer {
+  background: url(../images/pattern.png), var(--color1);
+  background: url(../images/pattern.png),
+    linear-gradient(90deg, rgba(255, 196, 83, 1) 0%, rgba(10, 9, 193, 1) 100%);
+  background-size: contain;
+}
+.itd_play {
+  background-color: var(--color1);
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  margin: 30px auto;
+  transition: all 0.2s ease;
+}
+.itd_play:hover {
+  background-color: var(--color2);
+  color: var(--color5);
+}
+.itd_triangle {
+  margin-right: -3px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 10px 0 10px 20px;
+  border-color: transparent transparent transparent var(--bs-white);
+}
+.btn-itd {
+  display: block;
+  max-width: 200px;
+  margin: 0 auto;
+  padding: 8px 30px;
+  color: var(--bs-white);
+  background-color: var(--color2);
+}
+.btn-itd:hover {
+  color: var(--color2);
+  background-color: var(--bs-white);
+}
+.embed-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+}
+.embed-container iframe,
+.embed-container object,
+.embed-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+/*Шапка сайта конец*/
+/*Раздел: "О курсе"*/
+.color1 {
+  color: var(--color1);
+}
+.color2 {
+  color: var(--color2);
+}
+.bg1 {
+  background-color: var(--color1);
+}
+.bg2 {
+  background-color: var(--color2);
+}
+/**/
+.about,
+.shedule,
+.author {
+  background: linear-gradient(
+    163deg,
+    rgba(227, 228, 233, 0.757598107602416) 0%,
+    rgba(223, 216, 216, 0.716) 100%
+  );
+  text-shadow: 3px 2px 5px rgba(17, 12, 97, 0.801),
+    0px 0px 9px rgb(255, 184, 240);
+}
+.itd-circle {
+  margin: 0 auto 15px;
+  width: 70px;
+  height: 70px;
+  border: 3px solid var(--color2);
+  border-radius: 50%;
+}
+.line {
+  width: 100px;
+  height: 3px;
+  background-color: var(--color1);
+  margin: 1rem auto;
+  box-shadow: 3px 2px 5px rgba(17, 12, 97, 0.801),
+    0px 0px 9px rgb(255, 184, 240);
+}
+/*Раздел: "О курсе" - КОНЕЦ*/
+/*Раздел: "Для кого курс"*/
+.forwhom,
+.learning {
+  background: url(/images/favicon/favicon-32x32.png),
+    linear-gradient(0deg, rgba(255, 196, 83, 1) 0%, rgba(10, 9, 193, 1) 100%);
+  background-repeat: no-repeat;
+  background-attachment: local;
+  background-position: bottom center;
+  text-shadow: 2px 1px 5px rgba(255, 242, 0, 0.801),
+    0px 0px 9px rgb(255, 255, 255);
+}
+.forwhom h5 {
+  padding: 3rem 1rem;
+  border: 3px groove var(--color1);
+  border-radius: 25%;
+  color: var(--color7);
+  text-shadow: 2px 1px 5px rgba(24, 24, 24, 0.801), 0px 0px 9px rgb(69, 73, 6);
+  margin-bottom: 0.5rem;
+  max-height: 80%;
+  max-width: 100%;
+  box-shadow: 3px 2px 5px rgba(17, 12, 97, 0.801), 0px 0px 9px rgb(56, 55, 55);
+}
+/*Раздел: "Для кого курс" -КОНЕЦ!*/
+/*Раздел: "Аккордион"*/
+.accordion-button:not(.collapsed) {
+  color: var(--color7);
+  background-color: var(--color4);
+}
+.accordion-button:focus {
+  z-index: 3;
+  border-color: var(--color4);
+  outline: 0;
+  box-shadow: 3px 2px 5px rgba(17, 12, 97, 0.801), 0px 0px 9px rgb(56, 55, 55);
+}
+
+.accordion-button::after {
+  flex-shrink: 0;
+  width: var(--bs-accordion-btn-icon-width);
+  height: var(--bs-accordion-btn-icon-width);
+  margin-left: auto;
+  content: "";
+  background-image: url("/images/down.png");
+  background-repeat: no-repeat;
+  background-size: var(--bs-accordion-btn-icon-width);
+  transition: var(--bs-accordion-btn-icon-transition);
+}
+.accordion-button:not(.collapsed)::after {
+  background-image: url("/images/down-white.png");
+  transform: var(--bs-accordion-btn-icon-transform);
+}
+.accordion-body {
+  background-color: rgba(239, 238, 237, 0.495);
+  text-shadow: 2px 1px 5px rgba(176, 174, 174, 0.801),
+    0px 0px 9px rgb(226, 200, 255);
+}
+/*Раздел: "Аккордион" -КОНЕЦ!*/
+/*Раздел: "Процесс обучения"*/
+.learning h5,
+a {
+  font-size: medium;
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--color7);
+  text-shadow: 3px 2px 5px rgba(17, 12, 97, 0.801),
+    0px 0px 9px rgb(255, 184, 240);
+  text-indent: 20px;
+}
+.learning a {
+  color: var(--color2);
+  text-shadow: 3px 2px 6px rgba(252, 251, 255, 0.801),
+    0px 0px 9px rgb(212, 230, 255);
+  font-weight: 500;
+  font-style: italic;
+  box-shadow: 3px 2px 5px rgba(17, 12, 97, 0.801), 0px 0px 9px rgb(56, 55, 55);
+}
+.learning img {
+  margin-bottom: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 3px 2px 5px rgba(17, 12, 97, 0.801), 0px 0px 9px rgb(56, 55, 55);
+  max-height: 70vh;
+
+  max-width: 100%;
+}
+/*Раздел: "Процесс обучения" -КОНЕЦ!*/
+
+/*Раздел: "Об авторе" */
+.author h5 {
+  font-size: medium;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: justify;
+  text-indent: 20px;
+}
+
+.author img {
+  margin-bottom: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 3px 2px 5px rgba(17, 12, 97, 0.801), 0px 0px 9px rgb(56, 55, 55);
+  max-height: 70vh;
+
+  max-width: 100%;
+}
+/*Раздел: "Об авторе" -КОНЕЦ!*/
+/*Раздел: "Отзывы" */
+
+.review div {
+  text-align: center;
+  max-width: 70vh;
+}
+.review img {
+  margin: 2rem auto 1rem;
+  border-radius: 50%;
+  box-shadow: 3px 2px 5px rgba(17, 12, 97, 0.801), 0px 0px 9px rgb(56, 55, 55);
+}
+.review hr {
+  margin: auto;
+  border: 2px solid var(--color4);
+  max-width: 20%;
+}
+/*Раздел: "Отзывы" -КОНЕЦ!*/
+/*Раздел: "Купить" */
+.buy img {
+  margin-bottom: 1rem;
+  border-radius: 0.5rem;
+  max-height: 70vh;
+
+  max-width: 100%;
+}
+.buy a {
+  margin: 3.5rem auto 1rem;
+  display: block;
+  box-shadow: 3px 2px 5px rgba(17, 12, 97, 0.801), 0px 0px 9px rgb(56, 55, 55);
+  border-radius: 0.5rem;
+}
+/*Раздел: "Купить" -КОНЕЦ!*/
+/*Раздел: "Footer" */
+
+a.btn-logo > img:hover {
+  animation-duration: 2s;
+  animation-name: my-scale;
+}
+a.btn-logo > b:hover {
+  transition-duration: 2s ease;
+  animation-duration: 2s;
+  animation-name: my-scale;
+}
+@keyframes my-scale {
+  30% {
+    transform: scale(1.3, 1.3);
+  }
+}
+a.btn-logo {
+  text-decoration: none;
+  padding: 0.5rem;
+  margin: 0.5 auto 0.5;
+  display: inline-block;
+}
+a.btn-logo:hover {
+  animation-duration: 2s;
+  animation-name: my-scale;
+  color: var(--color1);
+}
+.scroll-top > a.btn-logo > img {
+ max-width: 55%;
+
+
+}
+
+/*Раздел: "Footer" -КОНЕЦ!*/
